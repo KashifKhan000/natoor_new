@@ -1,0 +1,844 @@
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    /*sticky header position*/
+    
+    .sticky.is-sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        z-index: 999999999;
+    }
+    
+    nav {
+        background: #eaebec;
+        min-height: 85px;
+    }
+    
+    .item-1 {
+        background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url('../images/img3.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+    }
+    
+    .item-3 {
+        background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url('../images/slide-1.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+    }
+    
+    .item-4 {
+        background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url('../images/banner4.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .notification-drop {
+        font-family: 'Ubuntu', sans-serif;
+        color: #444;
+    }
+    
+    .notification-drop .item {
+        padding: 10px;
+        font-size: 18px;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .notification-drop .item:hover {
+        cursor: pointer;
+    }
+    
+    .notification-drop .item i {
+        margin-left: 10px;
+    }
+    
+    .notification-drop .item ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        background: #fff;
+        left: -200px;
+        right: 0;
+        z-index: 1;
+        border-top: 1px solid #ddd;
+    }
+    
+    .notification-drop .item ul li {
+        font-size: 16px;
+        padding: 15px 0 15px 25px;
+    }
+    
+    .notification-drop .item ul li:hover {
+        background: #ddd;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    @media screen and (min-width: 500px) {
+        .notification-drop {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .notification-drop .item {
+            border: none;
+        }
+    }
+    
+    .notification-bell {
+        font-size: 20px;
+    }
+    
+    .btn__badge {
+        background: #FF5D5D;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        padding: 3px 10px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    
+    .oooolo {
+        background-image: url('../images/hrm-back.jpg');
+        height: 113vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .pulse-button {
+        -webkit-animation: pulse 1.5s infinite;
+    }
+    
+    .pulse-button:hover {
+        -webkit-animation: none;
+    }
+    
+    @-webkit-keyframes pulse {
+        0% {
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+        70% {
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+        }
+        100% {
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+        }
+    }
+    
+    .notification-text {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .notification-text span {
+        float: right;
+    }
+    
+    .but {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 20px !important;
+        border-radius: 4px;
+        transition: 0.5s;
+        line-height: 1;
+        color: #fff;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        background: #428bca;
+    }
+    
+    .ist {
+        text-align: center;
+        margin-top: 250px;
+        line-height: 1.5;
+    }
+    
+    .heading {
+        font-size: 4em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: white;
+        text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+    }
+    
+    .heading1 {
+        font-size: 4em;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+        font-family: italic;
+    }
+    
+    .hire {
+        letter-spacing: 7px;
+        font-size: 1.1em;
+        font-weight: 300;
+        color: #fff;
+        margin: 1em 0 2em 0;
+    }
+    
+    .product {
+        font-weight: 600;
+    }
+    
+    .check {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .sel {
+        box-shadow: 5px 7px 15px 2px rgb(82 90 101 / 12%);
+        cursor: pointer;
+    }
+    
+    .serve {
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        background: #f5f9fc;
+        color: #428bca;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+    
+    .hel {
+        font-family: "Open Sans", sans-serif;
+        color: #444444;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .surv {
+        color: #428bca;
+    }
+    
+    .logos {
+        height: 40px;
+        margin-top: 20px;
+    }
+    
+    .soul {
+        color: #428bca;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    
+    .tech {
+        margin-top: 50px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+    }
+    /**/
+    
+    .owl-nav button.owl-prev {
+        left: 0;
+        visibility: collapse;
+    }
+    
+    .owl-nav button.owl-next {
+        right: 0;
+        visibility: collapse;
+    }
+    
+    .team {
+        font-size: 20px;
+        font-weight: 700;
+        color: #428bca;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .teem {
+        color: #428bca;
+    }
+    
+    .expert {
+        font-size: 40px;
+        color: #444444;
+        margin: 10px 0 0 0;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    .icons {
+        margin-top: 16px;
+        margin-left: 18px;
+    }
+    
+    .fant {
+        color: #9e9e9e;
+        margin-left: 5px;
+    }
+    
+    .info {
+        text-align: center;
+        font-size: 17px;
+        margin-top: 20px;
+        color: #0b0b31;
+    }
+    
+    .one {
+        padding: 0px;
+        box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .two {
+        padding: 0px;
+        box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .three {
+        padding: 0px;
+        box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .four {
+        padding: 0px;
+        box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .lisa {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .john {
+        border-bottom: 1px solid grey;
+        opacity: 0.5;
+        line-height: 2;
+    }
+    
+    .people {
+        /* margin-top: 50px; */
+        width: 100%;
+    }
+    
+    .build {
+        background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url('../images/cta-bg.jpg') center center;
+        width: 100%;
+        margin-top: 100px;
+        height: 60vh;
+        background-position: fixed;
+    }
+    
+    .count {
+        margin-top: 50px;
+    }
+    
+    .have {
+        margin-top: 30px;
+    }
+    
+    #count1 {
+        font-weight: 800;
+    }
+    
+    #count2 {
+        font-weight: 800;
+    }
+    
+    #count3 {
+        font-weight: 800;
+    }
+    
+    .work {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .about {
+        margin-top: 50px;
+    }
+    
+    .us {
+        color: #111;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .line6 {
+        height: 2px;
+        width: 7%;
+        text-align: center;
+        font-weight: 800;
+        background-color: #428bca;
+        margin-left: 510px;
+    }
+    
+    .about-us {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .contact {
+        color: #111;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .line-8 {
+        height: 2px;
+        width: 7%;
+        text-align: center;
+        font-weight: 800;
+        background-color: #428bca;
+        margin-left: 510px;
+    }
+    
+    .end {
+        text-align: center;
+    }
+    
+    .color {
+        font-size: 40px !important;
+        color: #00c1c1;
+        margin-top: 30px;
+    }
+    
+    .pak {
+        color: #444444;
+        text-align: center;
+        box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+        padding: 20px 0 30px 0;
+        background: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .cal {
+        font-size: 20px;
+        color: #334242;
+        font-weight: 700;
+        line-height: 2;
+    }
+    
+    .num {
+        color: #444444;
+    }
+    
+    .ground {
+        margin-top: 80px;
+    }
+    
+    .contact {
+        margin-top: 30px;
+    }
+    
+    .fot {
+        margin-top: 50px;
+    }
+    
+    .last-card {
+        box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+        margin-top: 50px;
+    }
+    
+    .name {
+        margin-top: 30px;
+    }
+    
+    .send {
+        background: #00c1c1;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+    
+    .footer {
+        background-color: black;
+        margin-top: 0px !important;
+    }
+    
+    .pak {
+        margin-bottom: 30px;
+    }
+    
+    .book {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        color: #7b68ee;
+        transition: 0.4s;
+        text-align: center;
+    }
+    
+    .links {
+        font-size: 15px;
+        color: #ececec;
+        font-weight: 400;
+        line-height: 2.5;
+    }
+    
+    .para {
+        font-size: 15px;
+        color: #ececec;
+        font-weight: 400;
+    }
+    
+    .icon1 {
+        letter-spacing: 5px;
+    }
+    
+    .sit {
+        color: #ececec;
+    }
+    
+    .volume {
+        font-size: 15px;
+        color: #ececec;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    
+    .fool {
+        padding-top: 50px !important;
+    }
+    
+    .calm {
+        color: #ececec !important;
+    }
+    
+    @media screen and (min-width: 1024px) {}
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .heading {
+            font-size: 45px;
+        }
+        .heading1 {
+            font-size: 40px;
+        }
+        .nottii {
+            height: 617px !important;
+        }
+        .sit {
+            margin-top: 25px;
+        }
+        .hello {
+            font-size: 16px;
+            margin-left: 50px;
+        }
+        .world {
+            font-size: 16px;
+            margin-left: 50px;
+        }
+        .build {
+            height: 100vh;
+        }
+        #count1 {
+            font-size: 40px;
+        }
+        #count2 {
+            font-size: 40px;
+        }
+        #count3 {
+            font-size: 40px;
+        }
+        .count {
+            margin-top: 5px;
+        }
+        .work {
+            font-size: 17px;
+        }
+        .pb-3 {
+            font-size: 25px;
+        }
+        .expert {
+            font-size: 38px;
+        }
+        .one {
+            margin-top: 25px;
+        }
+        .two {
+            margin-top: 25px;
+        }
+        .three {
+            margin-top: 25px;
+        }
+        .four {
+            margin-top: 25px;
+        }
+        .pak {
+            margin-top: 25px;
+        }
+        .sel {
+            margin-top: 25px;
+        }
+    }
+    
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+        .heading {
+            font-size: 40px;
+        }
+        .heading1 {
+            font-size: 35px;
+        }
+        .hello {
+            font-size: 21px;
+            margin-top: 30px;
+        }
+        .world {
+            font-size: 21px;
+            margin-top: 30px;
+        }
+        .build {
+            height: 100vh;
+        }
+        #count1 {
+            font-size: 40px;
+        }
+        #count2 {
+            font-size: 40px;
+        }
+        #count3 {
+            font-size: 40px;
+        }
+        .count {
+            margin-top: 5px;
+        }
+        .work {
+            font-size: 17px;
+        }
+        .pb-3 {
+            font-size: 25px;
+        }
+        .expert {
+            font-size: 38px;
+        }
+        .one {
+            margin-top: 25px;
+        }
+        .two {
+            margin-top: 25px;
+        }
+        .three {
+            margin-top: 25px;
+        }
+        .four {
+            margin-top: 25px;
+        }
+        .pak {
+            margin-top: 25px;
+        }
+        .sel {
+            margin-top: 25px;
+        }
+    }
+    
+    @media screen and (min-width: 480px) and (max-width: 575px) {
+        .heading {
+            font-size: 40px;
+        }
+        .heading1 {
+            font-size: 40px;
+        }
+        .nitii {
+            font-size: 12px;
+            width: 154%;
+        }
+        .nottii {
+            height: 617px !important;
+        }
+        .sit {
+            margin-top: 25px;
+        }
+        .hire {
+            font-size: 20px;
+        }
+        .sel {
+            margin-top: 25px;
+        }
+        .hello {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        .world {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        .build {
+            height: 100vh;
+        }
+        #count1 {
+            font-size: 40px;
+        }
+        #count2 {
+            font-size: 40px;
+        }
+        #count3 {
+            font-size: 40px;
+        }
+        .count {
+            margin-top: 5px;
+        }
+        .work {
+            font-size: 17px;
+        }
+        .pb-3 {
+            font-size: 25px;
+        }
+        .expert {
+            font-size: 38px;
+        }
+        .one {
+            margin-top: 25px;
+        }
+        .two {
+            margin-top: 25px;
+        }
+        .three {
+            margin-top: 25px;
+        }
+        .four {
+            margin-top: 25px;
+        }
+        .pak {
+            margin-top: 25px;
+        }
+    }
+    
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        .heading1 {
+            font-size: 20px;
+        }
+        .nitii {
+            font-size: 9px;
+            width: 154%;
+        }
+        .nottii {
+            height: 329px !important;
+        }
+        .sit {
+            margin-top: 25px;
+        }
+        .heading {
+            font-size: 20px;
+        }
+        .hire {
+            font-size: 15px;
+        }
+        .hel {
+            font-size: 20px;
+        }
+        .hello {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        .world {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        .pb-3 {
+            font-size: 27px;
+        }
+        .build {
+            height: 100vh;
+        }
+        #count1 {
+            font-size: 32px;
+        }
+        #count2 {
+            font-size: 32px;
+        }
+        #count3 {
+            font-size: 32px;
+        }
+        .work {
+            font-size: 17px;
+        }
+        .count {
+            margin-top: 10px;
+        }
+        .expert {
+            font-size: 30px;
+        }
+        .sel {
+            margin-top: 25px;
+        }
+        .one {
+            margin-top: 25px;
+        }
+        .two {
+            margin-top: 25px;
+        }
+        .three {
+            margin-top: 25px;
+        }
+        .four {
+            margin-top: 25px;
+        }
+        .pak {
+            margin-top: 25px;
+        }
+    }
